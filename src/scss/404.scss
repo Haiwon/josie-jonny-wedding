@@ -1,0 +1,24 @@
+.not-found {
+  display: flex;
+  height: 500px;
+  margin-top: 50px;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  &__icon {
+    margin-bottom: 60px;
+    padding: 40px;
+    width: 200px;
+    fill: #cfeeff;
+    background: currentColor;
+    border-radius: 50%;
+    background-position: top;
+    overflow: visible;
+  }
+
+  &__message {
+    margin-bottom: 20px;
+  }
+  
+}
