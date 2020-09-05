@@ -1,0 +1,261 @@
+@import url("//db.onlinewebfonts.com/c/4267d8aa8711bb8c72cbefb26066c9e0?family=Bookman+Old+Style");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+$main-bg: #cfeeff;
+$main-font-color: #485e69;
+$h1-size: 80px;
+$header-font: "Bookman Old Style";
+$stylised-header-font: "Dancing Script", cursive;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $main-font-color;
+  background-color: $main-bg;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  display: inline;
+  transition: all .1s;
+  color: $main-font-color;
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    color: $main-font-color;
+  }
+  &:hover {
+    color: lighten($main-font-color, 25%);
+  }
+  &:active {
+
+  }
+}
+
+.bg {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #fff 150px, $main-bg 300px);
+  background-repeat: no-repeat;
+  z-index: -100;
+}
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-family: "Bookman Old Style", "Arial";
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media only screen and (max-width: 691px) {
+    margin-top: 43px;
+  }
+
+  h1 {
+    font-size: $h1-size;
+    font-family: "Bookman Old Style";
+    text-transform: uppercase;
+    margin: 50px 0 20px;
+    padding: 0 70px;
+    border-bottom: 3px solid $main-font-color;
+    @media only screen and (max-width: 992px) {
+      font-size: 60px;
+      padding: 0 50px;
+      margin: 20px 0 20px;
+    }
+    @media only screen and (max-width: 601px) {
+      font-size: 45px;
+      padding: 20px 40px 0 40px;
+      margin: 10px 0 10px;
+    }
+    @media only screen and (max-width: 460px) {
+      font-size: 30px;
+      padding: 20px 40px 6px;
+      margin-top: 20px;
+      border-bottom: 2px solid $main-font-color;
+    }
+
+    @media only screen and (max-width: 339px) {
+      font-size: 25px;
+      padding: 20px 40px 6px;
+      margin-top: 20px;
+      border-bottom: 2px solid $main-font-color;
+    }
+  }
+  h2 {
+    @media only screen and (max-width: 992px) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 601px) {
+      font-size: 18px;
+    }
+    @media only screen and (max-width: 460px) {
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: 339px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.navbar {
+  &__small {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-family: $header-font;
+    background-color: #fff;
+    z-index: 100000;
+    @media only screen and (max-width: 691px) {
+      display: flex;
+      justify-content: flex-start;
+    }
+    padding: 5px 10px;
+    h3 {
+      position: relative;
+      margin: auto;
+      left: -12.75px;
+      justify-self: center;
+    }
+
+    .menu-button {
+      &__container {
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+        &.change {
+          #bar {
+            &-1 {
+              -webkit-transform: rotate(-45deg) translate(-7px, 4px);
+              transform: rotate(-45deg) translate(-10px, 7px);
+            }
+            &-2 {
+              opacity: 0;
+            }
+            &-3 {
+              -webkit-transform: rotate(45deg) translate(-4x, -4px);
+              transform: rotate(45deg) translate(-4px, -4px);
+            }
+          }
+        }
+      }
+      &__bar {
+        width: 25px;
+        height: 3px;
+        background-color: $main-font-color;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  &__large {
+    width: 100%;
+    // margin: 0 0 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    font-family: $header-font;
+    @media only screen and (max-width: 691px) {
+      display: none;
+    }
+    .navbar__links {
+      border: 2px solid rgba(0,0,0,0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 15px;
+      list-style: none;
+      background-color: lighten($main-bg, 6%);
+      margin: 0;
+      transition: all .1s;
+      @media only screen and (max-width: 699px) {
+        font-size: 14px;
+      }
+      &--link {
+        margin-right: 50px;
+        border-bottom: 2px solid transparent;
+        transition: all .2s;
+        &.active {
+          border-bottom: 2px solid $main-font-color;
+        }
+        &:hover {
+          border-bottom: 2px solid $main-font-color;
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  &__overlay {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 43px;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.75s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    &--content {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    &--link {
+      font-family: $header-font;
+      margin: 20px;
+      text-decoration: none;
+      font-size: 24px;
+      color: $main-font-color;
+      display: block;
+      transition: 0.25s;
+      &.active {
+        border-bottom: 2px solid $main-font-color;
+      }
+    }
+    &.open {
+      height: calc(100vh - 43px);
+    }
+  }
+}
+
+.header-image {
+  max-width: 100%;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  background-color: lighten($main-bg, 3%);
+  font-family: "Source Sans Pro", sans-serif;
+  
+  p {
+    margin: 0;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,16 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 700px,
+  lg: 720px,
+  xl: 800px
+) !default;
+
+.container {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+$primary: lighten(rgb(81, 108, 122), 10%);
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'layout';
