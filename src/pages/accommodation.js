@@ -16,13 +16,6 @@ export default class GettingThere extends React.Component {
           <GmapAccom />
           <p>Click a pin on the map to go to the website</p>
         </div>
-        <div className="container content">
-          <p className="summary">
-            We have picked out a small selection of hotels and bed & breakfasts
-            to suit a range of budgets. <br/><br /> Please see below for more
-            details:
-          </p>
-        </div>
         <h2 className="heading">Hotels</h2>
         <div className="container content">
 
