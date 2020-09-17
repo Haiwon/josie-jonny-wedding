@@ -10,9 +10,9 @@ import banquetHall from "../images/banquet-hall.jpg"
 export default class Details extends React.Component {
   render() {
     return (
-      <>
+      <div className="main-content-container details">
         <div className="container content">
-          <h2 class="title">The details</h2>
+          <h2 className="title">The details</h2>
         </div>
         <Image className="image img-fluid" id="barnbougle-castle" src={barnbougleCastle} width="800px" />
         <div className="container content body">
@@ -37,9 +37,12 @@ export default class Details extends React.Component {
         </div>
 
         <div className="container content info">
-          For more information on Barnbougle Castle, head over to their website:
+          <p>
+            For more information on and more images of Barnbougle Castle, please head over to their website:
+          </p>
+          <a href="https://roseberyvenues.co.uk/venue/barnbougle-castle" target="_blank" rel="noopener noreferrer"className="btn btn-primary">Click here</a>
         </div>
-      </>
+      </div>
     )
   }
 }

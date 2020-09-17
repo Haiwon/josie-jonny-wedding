@@ -8,7 +8,7 @@ export default class Home extends React.Component {
   
   render() {
     return (
-      <>
+      <div className="main-content-container home">
         <img
           className="image img-fluid"
           src={JosieJonny}
@@ -26,7 +26,7 @@ export default class Home extends React.Component {
           </p>
           <a href="https://jackphiron.typeform.com/to/UitoB7Xu" className="btn btn-primary" target="_blank" rel="noopener noreferrer">RSVP</a>
         </div>
-      </>
+      </div>
     )
   }
 }
