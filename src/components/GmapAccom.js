@@ -35,7 +35,7 @@ class GmapAccom extends Component {
           position={{ lat: 55.992472, lng: -3.33444 }}
           icon={{
             url:
-              "http://www.myiconfinder.com/icon/download/a5485b563efc4511e0cd8bd04ad0fe9e.png",
+              "https://icon-library.com/images/google-maps-pin-icon/google-maps-pin-icon-13.jpg",
             labelOrigin: {
               x: 12,
               y: 37,
@@ -56,7 +56,7 @@ class GmapAccom extends Component {
           position={{ lat: 55.982302, lng: -3.400205 }}
           icon={{
             url:
-              "http://www.myiconfinder.com/icon/download/a5485b563efc4511e0cd8bd04ad0fe9e.png",
+              "https://icon-library.com/images/google-maps-pin-icon/google-maps-pin-icon-13.jpg",
             labelOrigin: {
               x: 12,
               y: 37,
@@ -77,7 +77,7 @@ class GmapAccom extends Component {
           position={{ lat: 55.984123, lng: -3.405410 }}
           icon={{
             url:
-              "http://www.myiconfinder.com/icon/download/a5485b563efc4511e0cd8bd04ad0fe9e.png",
+              "https://icon-library.com/images/google-maps-pin-icon/google-maps-pin-icon-13.jpg",
             labelOrigin: {
               x: 12,
               y: 37,
@@ -98,7 +98,7 @@ class GmapAccom extends Component {
           position={{ lat: 55.990356, lng: -3.385105 }}
           icon={{
             url:
-              "http://www.myiconfinder.com/icon/download/a5485b563efc4511e0cd8bd04ad0fe9e.png",
+              "https://icon-library.com/images/google-maps-pin-icon/google-maps-pin-icon-13.jpg",
             labelOrigin: {
               x: 12,
               y: 37,
@@ -119,7 +119,7 @@ class GmapAccom extends Component {
           position={{ lat: 56.013113, lng: -3.405010 }}
           icon={{
             url:
-              "http://www.myiconfinder.com/icon/download/a5485b563efc4511e0cd8bd04ad0fe9e.png",
+              "https://icon-library.com/images/google-maps-pin-icon/google-maps-pin-icon-13.jpg",
             labelOrigin: {
               x: 12,
               y: 37,
@@ -140,7 +140,7 @@ class GmapAccom extends Component {
           position={{ lat: 55.989877, lng: -3.397552 }}
           icon={{
             url:
-              "http://www.myiconfinder.com/icon/download/a5485b563efc4511e0cd8bd04ad0fe9e.png",
+              "https://icon-library.com/images/google-maps-pin-icon/google-maps-pin-icon-13.jpg",
             labelOrigin: {
               x: 12,
               y: 37,
@@ -161,7 +161,7 @@ class GmapAccom extends Component {
           position={{ lat: 55.990054, lng: -3.396413 }}
           icon={{
             url:
-              "http://www.myiconfinder.com/icon/download/a5485b563efc4511e0cd8bd04ad0fe9e.png",
+              "https://icon-library.com/images/google-maps-pin-icon/google-maps-pin-icon-13.jpg",
             labelOrigin: {
               x: 12,
               y: -7,

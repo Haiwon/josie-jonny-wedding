@@ -35,7 +35,7 @@ class GmapDirections extends Component {
           position={{ lat: 55.992472, lng: -3.33444 }}
           icon={{
             url:
-              "http://www.myiconfinder.com/icon/download/a5485b563efc4511e0cd8bd04ad0fe9e.png",
+              "https://icon-library.com/images/google-maps-pin-icon/google-maps-pin-icon-13.jpg",
             labelOrigin: {
               x: 12,
               y: 37,
@@ -55,7 +55,7 @@ class GmapDirections extends Component {
           position={{ lat: 55.950620, lng: -3.361453 }}
           icon={{
             url:
-              "http://www.myiconfinder.com/icon/download/a5485b563efc4511e0cd8bd04ad0fe9e.png",
+              "https://icon-library.com/images/google-maps-pin-icon/google-maps-pin-icon-13.jpg",
             labelOrigin: {
               x: 12,
               y: 37,
