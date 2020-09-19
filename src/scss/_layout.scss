@@ -1,11 +1,11 @@
-@import url("//db.onlinewebfonts.com/c/4267d8aa8711bb8c72cbefb26066c9e0?family=Bookman+Old+Style");
+@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 
 $main-bg: #cfeeff;
 $main-font-color: #485e69;
 $h1-size: 80px;
-$header-font: "Bookman Old Style";
+$header-font: "Domine", serif;
 $stylised-header-font: "Dancing Script", cursive;
 
 html {
@@ -52,7 +52,7 @@ a {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  font-family: "Bookman Old Style", "Arial";
+  font-family: "Domine", serif, "Arial";
   font-weight: 100;
   text-align: center;
   margin-bottom: 40px;
@@ -63,7 +63,7 @@ a {
 
   h1 {
     font-size: $h1-size;
-    font-family: "Bookman Old Style";
+    font-family: "Domine", serif;
     text-transform: uppercase;
     margin: 50px 0 20px;
     padding: 0 70px;
