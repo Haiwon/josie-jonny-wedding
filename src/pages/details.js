@@ -11,7 +11,7 @@ class Details extends React.Component {
     return (
       <div className="main-content-container details">
         <div className="container content">
-          <h2 className="title">The details</h2>
+          <h2 className="title">The details TEST</h2>
         </div>
         <Img
           className="image img-fluid"
