@@ -39,7 +39,7 @@ export default class GettingThere extends React.Component {
                 <ul>
                   <li>
                     Barnbougle Castle is located 15 minutes away from Edinburgh
-                    Airport by car test
+                    Airport by car
                   </li>
                 </ul>
               </div>
