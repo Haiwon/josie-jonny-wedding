@@ -1,9 +1,9 @@
 import React from "react"
-import { Image } from "react-bootstrap"
 import { Helmet } from "react-helmet"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../scss/global.scss"
-import headerImg from "../images/header-image-borderless.png"
 import NavbarSmall from "../components/NavbarSmall"
 import NavbarLarge from "../components/NavbarLarge"
 import NavPopup from "../components/NavPopup"
@@ -11,6 +11,20 @@ import Transition from "../components/Transition"
 import { FaRegHeart } from "react-icons/fa"
 
 export default function Layout({ children, location, path }) {
+  const { header } = useStaticQuery(
+    graphql`
+      query {
+        header: file(relativePath: { eq: "header-image-borderless.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1440) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `
+  )
+  console.log(header)
   return (
     <div className="">
       <Helmet>
@@ -25,7 +39,8 @@ export default function Layout({ children, location, path }) {
       <NavbarSmall />
       <NavPopup page={path} />
       <header className="header">
-        <Image className="header__image img-fluid" src={headerImg} />
+        {/* <Image className="header__image img-fluid" src={headerImg} /> */}
+        <Img className="header__image img-fluid" fluid={header.childImageSharp.fluid} />
         <h1>Josie & Jonny</h1>
         <h2>
           31<sup>st</sup> July 2021 &mdash; Barnbougle Castle, Edinburgh

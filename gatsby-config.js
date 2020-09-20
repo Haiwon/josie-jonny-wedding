@@ -11,6 +11,7 @@ module.exports = {
     title: `Josie & Jonny`,
     description: `Please join us in celebrating the wedding of Josie Hiron & Jonny Brewster on 31st July, 2021 at Barnbougle Castle, Edinburgh`,
     author: `@haiw0n`,
+    image: `/og-image.png`
   },
   plugins: [
     `gatsby-plugin-sass`,

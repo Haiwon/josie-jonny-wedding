@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 import "../scss/page.scss"
 import "../scss/index.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -10,6 +11,7 @@ class Home extends React.Component {
     console.log(this.props)
     return (
       <div className="main-content-container home">
+        <SEO title="Home" />
         <Img
           className="image img-fluid"
           fluid={this.props.image}

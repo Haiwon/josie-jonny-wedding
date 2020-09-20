@@ -2,7 +2,7 @@ import React from "react"
 
 export default function MenuButton(props) {
   return (
-    <div className="menu-button__container" role="button" tabIndex={0} onClick={() => toggleMenu()} onKeyPress={(e) => keyToggle(e)}>
+    <div className="menu-button__container" role="button" aria-label="Navigation Menu" tabIndex={0} onClick={() => toggleMenu()} onKeyPress={(e) => keyToggle(e)}>
       <div className="menu-button__bar" id="bar-1"></div>
       <div className="menu-button__bar" id="bar-2"></div>
       <div className="menu-button__bar" id="bar-3"></div>

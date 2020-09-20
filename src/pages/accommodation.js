@@ -4,11 +4,13 @@ import "../scss/accommodation.scss"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import { FaHotel, FaBed } from "react-icons/fa"
 import GmapAccom from "../components/GmapAccom"
+import SEO from "../components/seo"
 
-export default class GettingThere extends React.Component {
+export default class Accommodation extends React.Component {
   render() {
     return (
       <div className="main-content-container accommodation">
+        <SEO title="Accommodation" />
         <div className="container content">
           <h2 className="title">Accommodation</h2>
         </div>

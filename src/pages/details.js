@@ -4,14 +4,16 @@ import { graphql, StaticQuery } from "gatsby"
 import "../scss/page.scss"
 import "../scss/details.scss"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import SEO from "../components/seo"
 
 class Details extends React.Component {
   render() {
     const { images } = this.props 
     return (
       <div className="main-content-container details">
+        <SEO title="The details" />
         <div className="container content">
-          <h2 className="title">The details TEST</h2>
+          <h2 className="title">The details</h2>
         </div>
         <Img
           className="image img-fluid"

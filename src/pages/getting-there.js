@@ -3,6 +3,8 @@ import "../scss/page.scss"
 import "../scss/getting-there.scss"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import GmapDirections from "../components/GmapDirections"
+import SEO from "../components/seo"
+
 import {
   FaCar,
   FaPlane,
@@ -15,6 +17,7 @@ export default class GettingThere extends React.Component {
   render() {
     return (
       <div className="main-content-container getting-there">
+        <SEO title="Getting there" />
         <div className="container content">
           <h2 className="title">Getting there</h2>
         </div>
