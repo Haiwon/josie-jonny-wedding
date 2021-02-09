@@ -84,10 +84,10 @@ export default class GettingThere extends React.Component {
                     To download detailed directions to Barnbougle Castle, please
                     click the button below:
                   </li>
-                  <a href={directions} className="btn btn-primary">
-                    Download
-                  </a>
                 </ul>
+                <a href={directions} className="btn btn-primary">
+                  Download
+                </a>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default class GettingThere extends React.Component {
               <div className="transport__info--text">
                 <ul>
                   <li>
-                    As Barnbougle Castle is located within the gated the Dalmeny
+                    As Barnbougle Castle is located within the gated Dalmeny
                     Estate, taxis must be booked in advance of the day
                   </li>
                   <li>Local taxi firms:</li>
