@@ -22,7 +22,7 @@ class Details extends React.Component {
         />
         <div className="container content body">
           <p className="summary">
-            Our wedding will take place on the <strong>31st July 2021</strong>
+            Our reception will take place on the <strong>3<sup>rd</sup> September 2022</strong>
             <br />
             at <strong>Barnbougle</strong> Castle near{" "}
             <strong>Edinburgh</strong>
@@ -35,8 +35,8 @@ class Details extends React.Component {
         />
         <div className="container content body">
           <p className="summary">
-            The ceremony will be held in the <strong>Scottish Library</strong>{" "}
-            at <strong>2:30pm</strong>
+            The reception will commence{" "}
+            from <strong>5:30pm</strong>
           </p>
         </div>
         <Img
@@ -46,8 +46,8 @@ class Details extends React.Component {
         />
         <div className="container content body">
           <p className="summary">
-            Followed by the <strong>reception</strong> and{" "}
-            <strong>ceilidh</strong> in the <strong>Banquet Hall</strong> until{" "}
+            Followed by live music and{" "}
+            dancing in the <strong>Banquet Hall</strong> until{" "}
             <strong>midnight</strong>
           </p>
         </div>

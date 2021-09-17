@@ -32,7 +32,7 @@ export default function Layout({ children, location, path }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
           integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
       </Helmet>
       <div className="bg"></div>
@@ -43,7 +43,7 @@ export default function Layout({ children, location, path }) {
         <Img className="header__image img-fluid" fluid={header.childImageSharp.fluid} />
         <h1>Josie & Jonny</h1>
         <h2>
-          31<sup>st</sup> July 2021 &mdash; Barnbougle Castle, Edinburgh
+          Saturday 3<sup>rd</sup> September 2022 &mdash; Barnbougle Castle, Edinburgh
         </h2>
       </header>
       <div id="to-top"></div>

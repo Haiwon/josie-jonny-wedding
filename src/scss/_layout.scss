@@ -178,7 +178,7 @@ a {
       justify-content: center;
       align-items: center;
       width: 100%;
-      padding: 15px;
+      padding: 1rem;
       list-style: none;
       background-color: lighten($main-bg, 6%);
       margin: 0;
@@ -187,7 +187,8 @@ a {
         font-size: 14px;
       }
       &--link {
-        margin-right: 50px;
+        // margin-right: 50px;
+        margin: 0 15px;
         border-bottom: 2px solid transparent;
         transition: all 0.2s;
         &.active {

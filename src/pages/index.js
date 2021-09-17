@@ -24,7 +24,7 @@ class Home extends React.Component {
             <br />
             Josie&nbsp;Hiron & Jonny&nbsp;Brewster
             <br />
-            on the 31<sup>st</sup> July, 2021 <br />
+            on the 3<sup>rd</sup> September, 2022 <br />
             at Barnbougle Castle, Queensferry, Edinburgh
           </p>
           <a
