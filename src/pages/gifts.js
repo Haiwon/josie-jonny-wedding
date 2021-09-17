@@ -19,7 +19,7 @@ export default class Gifts extends React.Component {
             a contribution to our honeymoon/new house fund would be gratefully
             received.
             <a
-              href="https://roseberyvenues.co.uk/venue/barnbougle-castle"
+              href="https://prezola.com/wishlists/10227747/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
