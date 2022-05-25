@@ -20,7 +20,9 @@ export default function NavbarLarge({page}) {
         <Link to="/gifts">
           <li className={"navbar__links--link" + (page === "/gifts/" ? " active" : "")}>Gifts</li>
         </Link>
-        <a href="https://jackphiron.typeform.com/to/UitoB7Xu" target="_blank" rel="noopener noreferrer"><li className={"navbar__links--link"}>RSVP</li></a>
+        <Link to="/rsvp">
+          <li className={"navbar__links--link" + (page === "/rsvp/" ? " active" : "")}>RSVP</li>
+        </Link>
       </ul>
     </nav>
   )

@@ -10,7 +10,7 @@ export default function NavPopup({ page }) {
         <Link className={"nav__overlay--link" + (page === "/getting-there/" ? " active" : "")} to="/getting-there" onClick={() => closePopup(this)}>Getting there</Link>
         <Link className={"nav__overlay--link" + (page === "/accommodation/" ? " active" : "")} to="/accommodation" onClick={() => closePopup(this)}>Accommodation</Link>
         <Link className={"nav__overlay--link" + (page === "/gifts/" ? " active" : "")} to="/gifts" onClick={() => closePopup(this)}>Gifts</Link>
-        <a href="https://jackphiron.typeform.com/to/UitoB7Xu" target="_blank" rel="noopener noreferrer" className="nav__overlay--link" onClick={() => closePopup(this)}>RSVP</a>
+        <Link className={"nav__overlay--link" + (page === "/rsvp/" ? " active" : "")} to="/rsvp" onClick={() => closePopup(this)}>RSVP</Link>
       </div>
     </div>
   )
