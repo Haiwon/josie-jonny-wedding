@@ -5,8 +5,15 @@
  */
 const path = require("path")
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   /* Your site config here */
+  flags: {
+    DEV_SRR: true
+  },
   siteMetadata: {
     title: `Josie & Jonny`,
     description: `Please join us in celebrating the wedding of Josie Hiron & Jonny Brewster on 31st July, 2021 at Barnbougle Castle, Edinburgh`,
