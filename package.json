@@ -19,6 +19,7 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.8.1",
+    "axios": "^0.27.2",
     "bootstrap": "^4.5.0",
     "gatsby": "^2.23.12",
     "gatsby-cli": "^2.12.99",

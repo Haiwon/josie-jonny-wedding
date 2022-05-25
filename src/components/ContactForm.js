@@ -11,6 +11,7 @@ import Button from "@mui/material/Button"
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator"
 import SEO from "./seo"
 import "../scss/rsvp.scss"
+import axios from "axios";
 
 const ContactForm = () => {
   const [numGuests, setNumGuests] = useState(1)
@@ -109,35 +110,49 @@ const ContactForm = () => {
     return body
   }
 
-  const handleSubmit = () => {
-    let guests = createGuestsTable()
-    const templateParams = {
-      guests: guests,
-      contactEmail: email,
-      isAttending: isAttending,
-      artist: artist,
-      track: track,
+  const handleSubmit = async () => {
+    // let guests = createGuestsTable()
+    // const templateParams = {
+    //   guests: guests,
+    //   contactEmail: email,
+    //   isAttending: isAttending,
+    //   artist: artist,
+    //   track: track,
+    // }
+    // setLoading(true)
+    // emailjs
+    //   .send(
+    //     process.env.EMAILJS_SERVICE_ID,
+    //     process.env.EMAILJS_TEMPLATE_ID,
+    //     templateParams,
+    //     process.env.EMAILJS_USER_ID
+    //   )
+    //   .then(
+    //     res => {
+    //       console.log("SUCCESS!", res.status, res.text)
+    //       setLoading(false)
+    //       setIsEmailSent(true)
+    //     },
+    //     err => {
+    //       console.log("FAILED...", err)
+    //       setLoading(false)
+    //       setError(true)
+    //     }
+    //   )
+    try {
+      setLoading(true);
+      let guests = createGuestsTable();
+      const res = await axios.post('/.netlify/functions/send-contact-email', {
+        email: email,
+        guests: guests,
+        isAttending: isAttending,
+        artist: artist,
+        track: track
+      })
+      console.log(res);
+    } catch(err) {
+      console.log(err);
     }
-    setLoading(true)
-    emailjs
-      .send(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
-        templateParams,
-        process.env.EMAILJS_USER_ID
-      )
-      .then(
-        res => {
-          console.log("SUCCESS!", res.status, res.text)
-          setLoading(false)
-          setIsEmailSent(true)
-        },
-        err => {
-          console.log("FAILED...", err)
-          setLoading(false)
-          setError(true)
-        }
-      )
   }
 
   let btnContent
