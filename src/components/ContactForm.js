@@ -8,10 +8,9 @@ import FormControlLabel from "@mui/material/FormControlLabel"
 import FormControl from "@mui/material/FormControl"
 import FormLabel from "@mui/material/FormLabel"
 import Button from "@mui/material/Button"
-import { ValidatorForm, TextValidator } from "react-material-ui-form-validator"
+import { ValidatorForm } from "react-material-ui-form-validator"
 import SEO from "./seo"
 import "../scss/rsvp.scss"
-import axios from "axios";
 
 const ContactForm = () => {
   const [numGuests, setNumGuests] = useState(1)
@@ -39,13 +38,6 @@ const ContactForm = () => {
       },
     })
   }
-
-  // const handleIndividualFields = e => {
-  //   setGuests({
-  //     ...guests,
-  //     [e.target.name]: e.target.value,
-  //   })
-  // }
 
   const handleEmail = e => {
     setEmail(e.target.value)
@@ -111,48 +103,34 @@ const ContactForm = () => {
   }
 
   const handleSubmit = async () => {
-    // let guests = createGuestsTable()
-    // const templateParams = {
-    //   guests: guests,
-    //   contactEmail: email,
-    //   isAttending: isAttending,
-    //   artist: artist,
-    //   track: track,
-    // }
-    // setLoading(true)
-    // emailjs
-    //   .send(
-    //     process.env.EMAILJS_SERVICE_ID,
-    //     process.env.EMAILJS_TEMPLATE_ID,
-    //     templateParams,
-    //     process.env.EMAILJS_USER_ID
-    //   )
-    //   .then(
-    //     res => {
-    //       console.log("SUCCESS!", res.status, res.text)
-    //       setLoading(false)
-    //       setIsEmailSent(true)
-    //     },
-    //     err => {
-    //       console.log("FAILED...", err)
-    //       setLoading(false)
-    //       setError(true)
-    //     }
-    //   )
-    try {
-      setLoading(true);
-      let guests = createGuestsTable();
-      const res = await axios.post('/.netlify/functions/send-contact-email', {
-        email: email,
-        guests: guests,
-        isAttending: isAttending,
-        artist: artist,
-        track: track
-      })
-      console.log(res);
-    } catch(err) {
-      console.log(err);
+    let guests = createGuestsTable()
+    const templateParams = {
+      guests: guests,
+      contactEmail: email,
+      isAttending: isAttending,
+      artist: artist,
+      track: track,
     }
+    setLoading(true)
+    emailjs
+      .send(
+        "service_mgyv7bj",
+        "template_c4quzi8",
+        templateParams,
+        "TQnkkoyYGmL7Y9Tuc"
+      )
+      .then(
+        res => {
+          console.log("SUCCESS!", res.status, res.text)
+          setLoading(false)
+          setIsEmailSent(true)
+        },
+        err => {
+          console.log("FAILED...", err)
+          setLoading(false)
+          setError(true)
+        }
+      )
   }
 
   let btnContent
