@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import "../scss/page.scss"
@@ -27,14 +27,7 @@ class Home extends React.Component {
             on the 3<sup>rd</sup> September, 2022 <br />
             at Barnbougle Castle, Queensferry, Edinburgh
           </p>
-          <a
-            href="https://jackphiron.typeform.com/to/UitoB7Xu"
-            className="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            RSVP
-          </a>
+          <Link to="/rsvp" className="btn btn-primary">RSVP</Link>
         </div>
       </div>
     )
