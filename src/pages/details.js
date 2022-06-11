@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 
 class Details extends React.Component {
   render() {
-    const { images } = this.props 
+    const { images } = this.props
     return (
       <div className="main-content-container details">
         <SEO title="The details" />
@@ -22,7 +22,10 @@ class Details extends React.Component {
         />
         <div className="container content body">
           <p className="summary">
-            Our reception will take place on the <strong>3<sup>rd</sup> September 2022</strong>
+            Our reception will take place on the{" "}
+            <strong>
+              3<sup>rd</sup> September 2022
+            </strong>
             <br />
             at <strong>Barnbougle</strong> Castle near{" "}
             <strong>Edinburgh</strong>
@@ -35,8 +38,8 @@ class Details extends React.Component {
         />
         <div className="container content body">
           <p className="summary">
-            The reception will commence{" "}
-            from <strong>5:30pm</strong>
+            The reception will commence from <strong>5:00pm</strong> with a
+            welcome drink
           </p>
         </div>
         <Img
@@ -46,9 +49,21 @@ class Details extends React.Component {
         />
         <div className="container content body">
           <p className="summary">
-            Followed by live music and{" "}
-            dancing in the <strong>Banquet Hall</strong> until{" "}
-            <strong>midnight</strong>
+            Followed by live music and dancing in the <strong>Library</strong>{" "}
+            until <strong>midnight</strong>
+          </p>
+        </div>
+
+        <div
+          className="container content info"
+          style={{ backgroundColor: "hsl(201, 100%, 95%)", padding: "1.75rem", borderRadius: "5px" }}
+        >
+          <p className="summary">The dress code is: Black tie optional.</p>
+          <p className="summary" style={{marginBottom: 0}}>
+            Please be aware that, though we love your little ones, we will not
+            be able to invite young children to our wedding. We hope that you
+            will still be able to attend. Please contact us if this causes an
+            issue, as exceptions may be possible for babies under 12 months.
           </p>
         </div>
 
@@ -98,8 +113,6 @@ export default () => (
         }
       }
     `}
-    render={(data) => (
-      <Details images={data} />
-    )}
+    render={data => <Details images={data} />}
   />
 )

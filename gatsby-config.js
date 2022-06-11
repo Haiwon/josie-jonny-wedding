@@ -12,7 +12,7 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   flags: {
-    DEV_SRR: true
+    DEV_SSR: true
   },
   siteMetadata: {
     title: `Josie & Jonny`,

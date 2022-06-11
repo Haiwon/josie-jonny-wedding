@@ -16,7 +16,7 @@ export default class Gifts extends React.Component {
           <p className="summary">
             Please do not feel obliged to give us a wedding gift. Your presence
             is more than enough. If you would, however, like to give a gift then
-            a contribution to our honeymoon/new house fund would be gratefully
+            a contribution to our new house fund would be gratefully
             received.
             <a
               href="https://prezola.com/wishlists/10227747/"

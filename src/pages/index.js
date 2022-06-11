@@ -16,6 +16,7 @@ class Home extends React.Component {
           className="image img-fluid"
           fluid={this.props.image}
           alt="Josie and Jonny"
+          style={{ filter: "hue-rotate(-5deg) saturate(1.1)" }}
         />
         <div className="container content">
           <h2>Please join us</h2>
@@ -27,7 +28,9 @@ class Home extends React.Component {
             on the 3<sup>rd</sup> September, 2022 <br />
             at Barnbougle Castle, Queensferry, Edinburgh
           </p>
-          <Link to="/rsvp" className="btn btn-primary">RSVP</Link>
+          <Link to="/rsvp" className="btn btn-primary">
+            RSVP
+          </Link>
         </div>
       </div>
     )
@@ -38,7 +41,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
-        jj: file(relativePath: { eq: "josie-jonny-blue-bg.png" }) {
+        jj: file(relativePath: { eq: "josie-jonny.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
@@ -47,8 +50,6 @@ export default () => (
         }
       }
     `}
-    render={(data) => (
-      <Home image={data.jj.childImageSharp.fluid}/>
-    )}
+    render={data => <Home image={data.jj.childImageSharp.fluid} />}
   />
 )
